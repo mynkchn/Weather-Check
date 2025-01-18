@@ -27,6 +27,10 @@ DEBUG = True
 ALLOWED_HOSTS = ['.railway.app', 'weather-check-production.up.railway.app']
 if DEBUG:
     ALLOWED_HOSTS += ['127.0.0.1', 'localhost']
+CSRF_TRUSTED_ORIGINS = [
+    'https://weather-check-production.up.railway.app',
+]
+
 
 
 # Application definition
