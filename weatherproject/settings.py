@@ -25,7 +25,9 @@ SECRET_KEY = 'y!^f73w5xi5zi17+q&hu+krknlm*j&018xfy8xx5(a)axn0%b%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.railway.app']
+if DEBUG :
+    ALLOWED_HOSTS+=['127.0.0.1','localhost']
 
 
 # Application definition
